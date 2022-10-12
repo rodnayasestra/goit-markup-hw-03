@@ -9,6 +9,7 @@
 }
 
 /* стилизация ссылок и т.п. */
+
 a {
   text-decoration: none;
 }
@@ -36,10 +37,12 @@ p {
 }
 .container {
   width: 1200px;
-  margin: 0 auto;
-  outline: 2px solid tomato;
-  margin-right: 215px;
   margin-left: 215px;
+  margin-right: 215px;
+  outline: 2px solid tomato;
+}
+.img{
+  display: block;
 }
 .visually-hidden {
   position: absolute;
@@ -71,7 +74,7 @@ p {
   margin-left: 50px;
 }
 .header-nav.contacts {
-  margin-left: 344px;
+  margin-left: auto;
 }
 .main-nav {
   display: flex;
@@ -198,6 +201,15 @@ p {
 }
 
 /* наши преимущества */
+
+.benefits {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+.benefits-head {
+  width: 270px;
+}
 .our-benefits {
   margin-bottom: 10px;
   font-weight: 700;
@@ -211,6 +223,14 @@ p {
   color: var(--primary-p-color);
 }
 /* заголовки секций 2-3 (Чем мы занимаемся, наша команда) */
+
+.section.business{
+  padding-top: 0px;
+}
+.our-business{
+  display: flex;
+  gap: 30px;
+}
 .section-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -227,6 +247,10 @@ p {
 .our-team {
   background-color: var(--secondary-bg-color);
 }
+.team{
+  display: flex;
+
+}
 .member-photo {
   margin-bottom: 30px;
 }
@@ -237,6 +261,7 @@ p {
   line-height: 1.18;
 }
 .members-position {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 19px;
   color: var(--primary-p-color);
