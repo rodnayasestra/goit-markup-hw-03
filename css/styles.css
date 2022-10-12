@@ -38,37 +38,74 @@ p {
   width: 1200px;
   margin: 0 auto;
   outline: 2px solid tomato;
+  margin-right: 215px;
+  margin-left: 215px;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* header */
 /* style logo */
 .logo {
+  margin-right: 93px;
   color: var(--accent-color);
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
+.header-nav {
+  display: flex;
+}
+.header-nav .item + .item {
+  margin-left: 50px;
+}
+.header-nav.contacts {
+  margin-left: 344px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .studio {
   color: #000000;
 }
 /* color for site-nav and contacts */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-nav .link {
   color: var(--primary-h-color);
 }
 .header-nav .link:hover,
-.header-nav .link:focus {
+.header-nav .link:focus,
+.header-nav .link-contacts:hover,
+.header-nav .link-contacts:focus {
   color: var(--accent-color);
 }
 .header-nav .link-contacts {
   color: var(--primary-p-color);
 }
-.header-nav .link-contacts:hover,
-.header-nav .link-contacts:focus {
-  color: var(--accent-color);
-}
 
 .header-nav .link.current {
   color: var(--accent-color);
+}
+.header-nav .link,
+.link-contacts {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* text */
 .header-nav .link,
@@ -87,18 +124,31 @@ p {
   color: var(--primary-white-color);
 }
 
+.adress {
+  margin-top: 20px;
+}
+.footer > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .adress-footer {
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   color: var(--primary-white-color);
 }
+.mail-footer {
+  margin-bottom: 9px;
+}
 .contacts-footer {
+  display: inline-block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .contacts-footer:hover,
 .contacts-footer:focus {
   color: var(--accent-color);
@@ -170,11 +220,18 @@ p {
 }
 /* содержимое секции 3 */
 .section {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-white-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.our-team {
+  background-color: var(--secondary-bg-color);
+}
+.member-photo {
+  margin-bottom: 30px;
+}
 .team-member {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;

@@ -19,18 +19,22 @@
   <body>
     <!-- шапка-->
     <header class="header">
-      <div class="container">
+      <div class="container main-nav">
         <a href="./index.html" class="logo"> Web<span class="studio">Studio</span></a>
         <nav>
           <ul class="header-nav">
-            <li><a href="./index.html" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+            <li class="item"><a href="./index.html" class="link current">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header-nav">
-          <li><a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link-contacts">+38 096 111 11 11</a></li>
+        <ul class="header-nav contacts">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link-contacts">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -46,10 +50,9 @@
         </div>
       </section>
 
-      <!-- Фишки компании -->
+      <!-- преимущества компании -->
       <section class="section">
-        <div class="container">
-          <h2 hidden class="">Переваги</h2>
+        <div class="container benefits">
           <ul>
             <li>
               <h3 class="our-benefits">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -111,12 +114,13 @@
         </div>
       </section>
       <!-- Участники команды -->
-      <section class="section">
+      <section class="section our-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul>
             <li>
               <img
+                class="member-photo"
                 src="./images/IgorDemyanenko.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
@@ -126,12 +130,24 @@
               <p class="members-position">Product Designer</p>
             </li>
             <li>
-              <img src="./images/OlgaRepina.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+              <img
+                src="./images/OlgaRepina.jpg"
+                alt="Ольга Рєпіна"
+                width="270"
+                height="260"
+                class="member-photo"
+              />
               <h3 class="team-member">Ольга Рєпіна</h3>
               <p class="members-position">Frontend Developer</p>
             </li>
             <li>
-              <img src="./images/MykolaTarasov.jpg" alt="Микола Тарасов" width="270" height="260" />
+              <img
+                src="./images/MykolaTarasov.jpg"
+                alt="Микола Тарасов"
+                width="270"
+                height="260"
+                class="member-photo"
+              />
               <h3 class="team-member">Микола Тарасов</h3>
               <p class="members-position">Marketing</p>
             </li>
@@ -141,6 +157,7 @@
                 alt="Михайло Єрмаков"
                 width="270"
                 height="260"
+                class="member-photo"
               />
               <h3 class="team-member">Михайло Єрмаков</h3>
               <p class="members-position">UI Designer</p>
@@ -153,10 +170,10 @@
     <footer class="footer">
       <div class="container">
         <a href="./index.html" class="logo"> Web<span class="studio">Studio</span></a>
-        <address>
+        <address class="adress">
           <ul>
             <li class="adress-footer">м. Київ, пр-т Лесі Українки, 26</li>
-            <li>
+            <li class="mail-footer">
               <a href="mailto:" class="contacts-footer">info@devstudio.com</a>
             </li>
             <li><a href="tel:+380961111111" class="contacts-footer">+38 096 111 11 11</a></li>
