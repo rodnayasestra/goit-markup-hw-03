@@ -43,6 +43,12 @@ p {
   margin-right: auto;
 }
 
+.section {
+  background-color: var(--primary-white-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -57,7 +63,6 @@ p {
 }
 
 /* header */
-/* style logo */
 .logo {
   margin-right: 93px;
   color: var(--accent-color);
@@ -106,25 +111,20 @@ p {
 }
 .header-nav .link,
 .link-contacts {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-/* text */
-.header-nav .link,
-.link-contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 
 /* футер */
 .footer {
   background-color: var(--footer-and-hero-color);
 }
-.container > .logo {
-  padding-left: 0px;
-}
+
 .footer .studio {
   color: var(--primary-white-color);
 }
@@ -162,10 +162,9 @@ p {
 /* hero and buttons*/
 .hero {
   background-color: var(--footer-and-hero-color);
-
   text-align: center;
 }
- .hero-container {
+.hero-container {
   padding-left: 452px;
   padding-right: 452px;
   padding-top: 200px;
@@ -227,7 +226,7 @@ p {
   line-height: 1.71;
   color: var(--primary-p-color);
 }
-/* заголовки секций 2-3 (Чем мы занимаемся, наша команда) */
+/*  (Чем мы занимаемся, наша команда) */
 
 .section.business {
   padding-top: 0px;
@@ -246,11 +245,7 @@ p {
   text-align: center;
 }
 /* содержимое секции 3 */
-.section {
-  background-color: var(--primary-white-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 
 .our-team {
   background-color: var(--secondary-bg-color);
@@ -336,7 +331,7 @@ p {
 .projects-portfolio-title {
   padding-left: 24px;
 }
-.projects-portfolio-title{
+.projects-portfolio-title {
   padding-bottom: 20px;
 }
 .projects-portfolio {
