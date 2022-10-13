@@ -119,7 +119,6 @@ p {
   padding-bottom: 32px;
 }
 
-
 /* футер */
 .footer {
   background-color: var(--footer-and-hero-color);
@@ -161,15 +160,10 @@ p {
 /* index.html */
 /* hero and buttons*/
 .hero {
-  background-color: var(--footer-and-hero-color);
-  text-align: center;
-}
-.hero-container {
-  padding-left: 452px;
-  padding-right: 452px;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin: 0 auto;
+  background-color: var(--footer-and-hero-color);
+  text-align: center;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -207,12 +201,11 @@ p {
 
 .benefits {
   display: flex;
-  flex-wrap: nowrap;
   gap: 30px;
   justify-content: center;
 }
 .benefits-head {
-  width: 270px;
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .our-benefits {
   margin-bottom: 10px;
@@ -246,14 +239,12 @@ p {
 }
 /* содержимое секции 3 */
 
-
 .our-team {
   background-color: var(--secondary-bg-color);
 }
 .team {
   display: flex;
   gap: 30px;
-  flex-wrap: nowrap;
   justify-content: center;
 }
 .member-photo {
@@ -323,7 +314,8 @@ p {
   gap: 30px;
 }
 .projects-item {
-  flex-basis: calc(100% / 3 - 20px);
+  /* количество зазоров в строке умноженное на ширину столбца/количество элементов */
+  flex-basis: calc((100% - 2 * 30px) / 3);
   background-color: var(--primary-white-color);
   border-bottom: 1px solid #eeeeee;
 }
