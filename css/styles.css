@@ -131,10 +131,14 @@ p {
 .adress {
   margin-top: 20px;
 }
-.footer > .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.container>.logo{
+  margin: 0px;
+}
+
 .adress-footer {
   margin-bottom: 9px;
   font-style: normal;
