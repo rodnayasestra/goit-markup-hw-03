@@ -62,6 +62,10 @@ p {
   margin: -1px;
 }
 
+.img {
+  display: block;
+}
+
 /* header */
 .logo {
   margin-right: 93px;
@@ -136,7 +140,6 @@ p {
   padding-bottom: 60px;
 }
 
-
 .adress-footer {
   margin-bottom: 9px;
   font-style: normal;
@@ -178,7 +181,6 @@ p {
 }
 
 .button-hero {
-  display: inline-block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -186,10 +188,8 @@ p {
   letter-spacing: 0.06em;
   cursor: pointer;
   padding: 10px 32px;
-  min-width: 215px;
   border-radius: 4px;
-  border: 0px;
-  text-align: center;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--accent-color);
   color: var(--primary-white-color);
@@ -252,9 +252,7 @@ p {
 .member-photo {
   margin-bottom: 30px;
 }
-.img {
-  display: block;
-}
+
 .team-member {
   margin-bottom: 10px;
   font-weight: 500;
@@ -319,7 +317,11 @@ p {
   /* количество зазоров в строке умноженное на ширину столбца/количество элементов */
   flex-basis: calc((100% - 2 * 30px) / 3);
   background-color: var(--primary-white-color);
+}
+.item-borders {
+  border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .projects-portfolio,
 .projects-portfolio-title {
