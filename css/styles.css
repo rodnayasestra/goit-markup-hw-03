@@ -66,6 +66,7 @@ p {
   display: block;
 }
 
+
 /* header */
 .logo {
   margin-right: 93px;
@@ -126,6 +127,9 @@ p {
 /* футер */
 .footer {
   background-color: var(--footer-and-hero-color);
+}
+.footer .logo{
+  margin: 0px;
 }
 
 .footer .studio {
